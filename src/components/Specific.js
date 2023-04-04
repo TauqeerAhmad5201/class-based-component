@@ -1,11 +1,36 @@
 import React, { Component } from 'react'
 
-export default class Specific extends Component {
-  render() {
-    return (
-      <div>
+class App extends Component {
+    constructor(props){ 
+        super(props) 
+            
+        // Set initial state 
+        this.state = {greeting : 
+              'Click the button to receive greetings'} 
+            
+        // Binding this keyword 
+        this.updateState = this.updateState.bind(this) 
+      } 
         
-      </div>
-    )
-  }
-}
+      updateState(){ 
+        // Changing state 
+        this.setState({greeting : 
+                     'GeeksForGeeks welcomes you !!'}) 
+      } 
+          
+      render(){ 
+        return ( 
+          <div> 
+           <h2>Greetings Portal</h2>   
+           <p>{this.state.greeting}</p>
+          
+            {/* Set click handler */} 
+            <button onClick={this.updateState}> 
+              Click me!
+            </button> 
+          </div> 
+        ) 
+      } 
+    } 
+
+    export default App;
