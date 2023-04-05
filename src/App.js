@@ -3,6 +3,7 @@ import Hello from './components/Hello';
 import Specific from './components/Specific'
 import Basic from './components/Basic';
 import Constructors from './components/Constructors';
+import SetState from './components/SetState'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <Specific></Specific>
     <Basic></Basic>
     <Constructors></Constructors>
+    <SetState></SetState>
     </>
   );
 }
