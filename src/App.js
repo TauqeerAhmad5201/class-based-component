@@ -4,6 +4,7 @@ import Specific from './components/Specific'
 import Basic from './components/Basic';
 import Constructors from './components/Constructors';
 import SetState from './components/SetState'
+import Data from './components/Data';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <Basic></Basic>
     <Constructors></Constructors>
     <SetState></SetState>
+    <Data></Data>
     </>
   );
 }

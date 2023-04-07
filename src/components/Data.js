@@ -8,11 +8,18 @@ export default class Data extends Component {
        data: 'Content to be published'
     }
   }
+  handleOnClick = () => {
+    this.setState ({
+      data : "Published"
+    }) 
+  }
+  
   
   render() {
     return (
       <div>
-        
+        <p>Boom: {this.state.data}</p>
+        <button onClick={this.handleOnClick}>Click Me</button>
       </div>
     )
   }
